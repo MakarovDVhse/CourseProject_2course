@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{83D71A28-041C-4AAA-ADEA-A8B5B30CDC37}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjectCourse_2</RootNamespace>
+    <AssemblyName>ProjectCourse_2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Esri.ArcGISRuntime, Version=100.10.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\Esri.ArcGISRuntime.100.10.0\lib\net461\Esri.ArcGISRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Esri.ArcGISRuntime.WPF, Version=100.10.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\Esri.ArcGISRuntime.WPF.100.10.0\lib\net461\Esri.ArcGISRuntime.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutLS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutLS.Designer.cs">
+      <DependentUpon>AboutLS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AboutObj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutObj.Designer.cs">
+      <DependentUpon>AboutObj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AboutProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutProgram.Designer.cs">
+      <DependentUpon>AboutProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AboutR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutR.Designer.cs">
+      <DependentUpon>AboutR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddLS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLS.Designer.cs">
+      <DependentUpon>AddLS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddLSToMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLSToMap.Designer.cs">
+      <DependentUpon>AddLSToMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddObj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddObj.Designer.cs">
+      <DependentUpon>AddObj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddObjToMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddObjToMap.Designer.cs">
+      <DependentUpon>AddObjToMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddR.Designer.cs">
+      <DependentUpon>AddR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRToMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRToMap.Designer.cs">
+      <DependentUpon>AddRToMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdressSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdressSearch.Designer.cs">
+      <DependentUpon>AdressSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdressSearchResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdressSearchResult.Designer.cs">
+      <DependentUpon>AdressSearchResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeLS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeLS.Designer.cs">
+      <DependentUpon>ChangeLS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeLSCon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeLSCon.Designer.cs">
+      <DependentUpon>ChangeLSCon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeObj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeObj.Designer.cs">
+      <DependentUpon>ChangeObj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeObjCon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeObjCon.Designer.cs">
+      <DependentUpon>ChangeObjCon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeR.Designer.cs">
+      <DependentUpon>ChangeR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeRCon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeRCon.Designer.cs">
+      <DependentUpon>ChangeRCon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateLandscape.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateLandscape.Designer.cs">
+      <DependentUpon>CreateLandscape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateRoadSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateRoadSystem.Designer.cs">
+      <DependentUpon>CreateRoadSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBCreation.Designer.cs">
+      <DependentUpon>DBCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBInfo.Designer.cs">
+      <DependentUpon>DBInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteLS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteLS.Designer.cs">
+      <DependentUpon>DeleteLS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteObj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteObj.Designer.cs">
+      <DependentUpon>DeleteObj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteR.Designer.cs">
+      <DependentUpon>DeleteR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawingChangeLS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrawingChangeLS.Designer.cs">
+      <DependentUpon>DrawingChangeLS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawingChangeObj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrawingChangeObj.Designer.cs">
+      <DependentUpon>DrawingChangeObj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawingChangeR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrawingChangeR.Designer.cs">
+      <DependentUpon>DrawingChangeR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSObj.cs" />
+    <Compile Include="MainChangingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainChangingWindow.Designer.cs">
+      <DependentUpon>MainChangingWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map.Designer.cs">
+      <DependentUpon>Map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapPosition.cs" />
+    <Compile Include="NameorIdSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NameorIdSearch.Designer.cs">
+      <DependentUpon>NameorIdSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NameorIdSearchResultLS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NameorIdSearchResultLS.Designer.cs">
+      <DependentUpon>NameorIdSearchResultLS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NameorIdSearchResultObj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NameorIdSearchResultObj.Designer.cs">
+      <DependentUpon>NameorIdSearchResultObj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NameorIdSearchResultR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NameorIdSearchResultR.Designer.cs">
+      <DependentUpon>NameorIdSearchResultR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaintedMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaintedMap.Designer.cs">
+      <DependentUpon>PaintedMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pixel.cs" />
+    <Compile Include="PixelMap.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RObj.cs" />
+    <Compile Include="SaveFile.cs" />
+    <Compile Include="UObj.cs" />
+    <EmbeddedResource Include="AboutLS.resx">
+      <DependentUpon>AboutLS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutObj.resx">
+      <DependentUpon>AboutObj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutProgram.resx">
+      <DependentUpon>AboutProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutR.resx">
+      <DependentUpon>AboutR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddLS.resx">
+      <DependentUpon>AddLS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddLSToMap.resx">
+      <DependentUpon>AddLSToMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddObj.resx">
+      <DependentUpon>AddObj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddObjToMap.resx">
+      <DependentUpon>AddObjToMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddR.resx">
+      <DependentUpon>AddR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRToMap.resx">
+      <DependentUpon>AddRToMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdressSearch.resx">
+      <DependentUpon>AdressSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdressSearchResult.resx">
+      <DependentUpon>AdressSearchResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeLS.resx">
+      <DependentUpon>ChangeLS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeLSCon.resx">
+      <DependentUpon>ChangeLSCon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeObj.resx">
+      <DependentUpon>ChangeObj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeObjCon.resx">
+      <DependentUpon>ChangeObjCon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeR.resx">
+      <DependentUpon>ChangeR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeRCon.resx">
+      <DependentUpon>ChangeRCon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateLandscape.resx">
+      <DependentUpon>CreateLandscape.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateRoadSystem.resx">
+      <DependentUpon>CreateRoadSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBCreation.resx">
+      <DependentUpon>DBCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBInfo.resx">
+      <DependentUpon>DBInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteLS.resx">
+      <DependentUpon>DeleteLS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteObj.resx">
+      <DependentUpon>DeleteObj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteR.resx">
+      <DependentUpon>DeleteR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingChangeLS.resx">
+      <DependentUpon>DrawingChangeLS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingChangeObj.resx">
+      <DependentUpon>DrawingChangeObj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingChangeR.resx">
+      <DependentUpon>DrawingChangeR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainChangingWindow.resx">
+      <DependentUpon>MainChangingWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map.resx">
+      <DependentUpon>Map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NameorIdSearch.resx">
+      <DependentUpon>NameorIdSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NameorIdSearchResultLS.resx">
+      <DependentUpon>NameorIdSearchResultLS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NameorIdSearchResultObj.resx">
+      <DependentUpon>NameorIdSearchResultObj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NameorIdSearchResultR.resx">
+      <DependentUpon>NameorIdSearchResultR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaintedMap.resx">
+      <DependentUpon>PaintedMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Esri.ArcGISRuntime.runtimes.win.100.10.0\build\net461\Esri.ArcGISRuntime.runtimes.win.targets" Condition="Exists('..\packages\Esri.ArcGISRuntime.runtimes.win.100.10.0\build\net461\Esri.ArcGISRuntime.runtimes.win.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Esri.ArcGISRuntime.runtimes.win.100.10.0\build\net461\Esri.ArcGISRuntime.runtimes.win.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Esri.ArcGISRuntime.runtimes.win.100.10.0\build\net461\Esri.ArcGISRuntime.runtimes.win.targets'))" />
+    <Error Condition="!Exists('..\packages\Esri.ArcGISRuntime.100.10.0\build\net461\Esri.ArcGISRuntime.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Esri.ArcGISRuntime.100.10.0\build\net461\Esri.ArcGISRuntime.targets'))" />
+    <Error Condition="!Exists('..\packages\Esri.ArcGISRuntime.WPF.100.10.0\build\net461\Esri.ArcGISRuntime.WPF.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Esri.ArcGISRuntime.WPF.100.10.0\build\net461\Esri.ArcGISRuntime.WPF.targets'))" />
+  </Target>
+  <Import Project="..\packages\Esri.ArcGISRuntime.100.10.0\build\net461\Esri.ArcGISRuntime.targets" Condition="Exists('..\packages\Esri.ArcGISRuntime.100.10.0\build\net461\Esri.ArcGISRuntime.targets')" />
+  <Import Project="..\packages\Esri.ArcGISRuntime.WPF.100.10.0\build\net461\Esri.ArcGISRuntime.WPF.targets" Condition="Exists('..\packages\Esri.ArcGISRuntime.WPF.100.10.0\build\net461\Esri.ArcGISRuntime.WPF.targets')" />
+</Project>
